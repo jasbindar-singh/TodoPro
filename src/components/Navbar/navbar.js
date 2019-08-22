@@ -11,9 +11,9 @@ const Navbar = () => {
             </div>
             <div className="nav_link_container">
                 <ul className="nav_link_list">
-                    <li className="nav_link"><a href="/home">Home</a></li>
-                    <li className="nav_link"><a href="/login">Login</a></li>
-                    <li className="nav_link"><a href="/signup">SignUp</a></li>
+                    <a href="/home"><li className="nav_link">Home</li></a>
+                    <a href="/signin"><li className="nav_link">SignIn</li></a>
+                    <a href="/signup"><li className="nav_link">SignUp</li></a>
                 </ul>
             </div>
         </div>
