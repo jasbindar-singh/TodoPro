@@ -1,32 +1,37 @@
 import React from 'react'
-import '../SignIn/signIn.css'
+import '../SignUp/signUp.css'
 
-const SignIn = () => {
+const SignUp = () => {
     return(
         <div className="container">
             <div className="form_container">
                 <div className="form_main">
-                    <div className="landing_header">
+                    <div className="landing_header form">
                         <div className="landing_header_content">
-                            SignIn
+                            SignUp
                         </div>
                     </div>
                     <div className="form_main_content">
                         <div >
+                            <label htmlFor="name">Name</label><br/>
+                            <input type="text" name="name" id="name"/>
+                        </div>
+                        <div >
                             <label htmlFor="email">Email</label><br/>
-                            <input type="text" name="email" id="email"/>
+                            <input type="email" name="email" id="email"/>
                         </div>
                         <div>
                             <label htmlFor="password">Password</label><br/>
                             <input type="password" name="password" id="password"/>
                         </div>
+                        <div>
+                            <label htmlFor="password">Re-Password</label><br/>
+                            <input type="password" name="repassword" id="repassword"/>
+                        </div>
                         <div className="message">Please Login.</div>
-                        <div className="button started">Sign In</div>
+                        <div className="button form">Sign In</div>
                         <div className="terms">
                             *Terms and Condition
-                        </div>
-                        <div className="register">
-                            New User? <a href="/signup">Register</a>
                         </div>
                     </div>
                 </div>
@@ -35,4 +40,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn;
+export default SignUp;

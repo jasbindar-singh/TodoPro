@@ -28,6 +28,10 @@ html{
     font-family: 'Lexend Tera', sans-serif;
 }
 
+.nav_heading_content a{
+    color: #000000;
+}
+
 .nav_link_container{
     flex: 3 1 auto;
     display: flex;

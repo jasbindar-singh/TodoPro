@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="nav_heading">
                 <div className="nav_heading_content">
-                    Todo Pro
+                    <a href="/">Todo Pro</a>
                 </div>
             </div>
             <div className="nav_link_container">

@@ -15,7 +15,7 @@ const Landing = () => {
                         <div className="landing_main_content">
                             Your own personalised Todo App for you day to day work!
                         </div>
-                        <div className="button started">Get Started</div>
+                        <div className="button started"><a href="/signin">Get Started</a></div>
                     </div>
                 </div>
             </div>

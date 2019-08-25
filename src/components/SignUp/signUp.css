@@ -4,7 +4,7 @@
     background: pink;
 }
 
-.landing_container{
+.form_container{
     font-family: 'Raleway', sans-serif;
     display: flex;
     width: 100%;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.landing_main{
+.form_main{
     width: 70%;
     height: 90%;
     display: flex;
@@ -21,28 +21,37 @@
     background: yellow;
 }
 
-.landing_header{
+.landing_header .form{
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
 }
 
-.landing_header_content{
-    font-size: 7rem;
-}
-
-.landing_main_container{
-    flex: 2;
+.form_main_content{
+    flex: 3;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.landing_main_content{
-    font-size: 2rem;
-    text-align: center;
+label{
+    font-size: 12px;
+}
+
+input{
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    height: 3rem;
+    width: 200px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    transition: 0.3s; 
+}
+
+input:focus{
+    width: 220px;
+    border-bottom: 2px solid #ffffff;
 }
 
 .button a{
@@ -60,22 +69,16 @@
     cursor: pointer;
 }
 
-.started{
-    margin-top: 50px;
+.form{
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-    .landing_main{
+    .form_main{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         background: yellow;
-    }
-
-    .landing_main_content{
-        font-size: 2rem;
-        padding: 5px;
-        text-align: center;
     }
 }
