@@ -23,18 +23,6 @@ const Home = () => {
                                     <div className="todo_data_main">Water the plant before evening.</div>
                                     <div className="todo_data_delete">D</div>
                                 </li>
-                                <li className="todo_data">
-                                    <div className="todo_data_main">Water the plant before evening.</div>
-                                    <div className="todo_data_delete">D</div>
-                                </li>
-                                <li className="todo_data">
-                                    <div className="todo_data_main">Water the plant before evening.</div>
-                                    <div className="todo_data_delete">D</div>
-                                </li>
-                                <li className="todo_data">
-                                    <div className="todo_data_main">Water the plant before evening.</div>
-                                    <div className="todo_data_delete">D</div>
-                                </li>
                             </ul>
                         </div>
                     </div>

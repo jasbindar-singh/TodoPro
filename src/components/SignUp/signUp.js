@@ -28,7 +28,7 @@ const SignUp = () => {
                             <label htmlFor="password">Re-Password</label><br/>
                             <input type="password" name="repassword" id="repassword"/>
                         </div>
-                        <div className="message">Please Login.</div>
+                        <div className="message">New Account.</div>
                         <div className="button form">Sign In</div>
                         <div className="terms">
                             *Terms and Condition

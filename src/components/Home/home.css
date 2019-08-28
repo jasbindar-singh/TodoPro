@@ -21,46 +21,115 @@
 }
 
 .todo_input{
-    flex: 1;
+    flex: 2;
+    display: flex;
+    align-items: stretch;
 }
 
 .todo_list{
-    flex: 7;
+    flex: 14;
+    overflow-y: auto;
 }
 
 .todo_input_container{
+    flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .todo_input_text{
-    flex: 9;
+    flex: 8;
+    display: flex;   
+    align-items: stretch;
+}
+
+.todo_input_text input{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 1rem;
+    font-size: 2rem;
+    padding: 0 20px;
+    background: red;
 }
 
 .todo_toggle{
     flex: 1;
-    text-align: center;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .todo_list_container{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll;
 }
 
 .todo_data{
     list-style: none;
     display: flex;
+    font-size: 1.7rem;
     background: blue;
+    font-family: 'Raleway', sans-serif;
 }
 
 .todo_data_main{
-    flex: 9;
+    flex: 8;
+    padding: 20px 50px;
 }
 
 .todo_data_delete{
+    flex: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.todo_data:hover .todo_data_delete{
     flex: 1;
-    text-align: center;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .todo_main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background: yellow;
+    }
+
+    .todo_data:hover .todo_data_delete{
+        flex: 2;
+        opacity: 1;
+    }
+
+    .todo_toggle{
+        flex: 2;
+        display: flex;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .todo_data_main{
+        flex: 7;
+        padding: 20px 50px;
+    }
+
+    .todo_input{
+        flex: 1.5;
+        display: flex;
+        align-items: stretch;
+    }
 }
